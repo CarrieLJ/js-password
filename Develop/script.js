@@ -22,37 +22,36 @@ function writePassword() {
 function generatePassword() {
 
   //variables with prompts and confirms for popups with text
-  var length = window.prompt("How many characters do you want your password to contain?");
-    if (length === True){
-      password = ""
+  var length = prompt("How many characters do you want your password to contain?");
+    if (length >= 8 && length <= 128){
     }
-    else (!length) {
+    else (!length); {
       return;
     }
-  var specChar1 = window.confirm("Do you want to include special characters?");
-  if (specChar1) {
-    return;
-  }
+  var specChar1 = confirm("Do you want to include special characters?");
+     if (minSpecChar1 = passwordRules.getSpecChar1();
+      minLength++;
   var numbers = window.confirm("Do you want to include numbers?");
-  if (!numbers) {
-    return;
-  }
+    if (numbers === True) {
+    }
   var lowerCase = window.confirm("Do you want to include lowercase letters?");
-  if (!lowerCase) {
-    return;
-  }
+    if (!lowerCase) {
+    }
   var upperCase = window.confirm("Do you want to include uppercase letters?");
-  if (!upperCase) {
-    return;
+    if (!upperCase) {
+    }
   }
   
+  
+
+
 //variables for minimum
-  var minLength = "8";
-  var maxLength = "128";
-  var minSpecChar1 = "";
-  var minNumbers = "";
-  var minLowerCase = "";
-  var minUpperCase = "";
+  // var minLength = "8";
+  // var maxLength = "128";
+  // var minSpecChar1 = "";
+  // var minNumbers = "";
+  // var minLowerCase = "";
+  // var minUpperCase = "";
 
   //what the user selected
   // if (specChar1 === True);
@@ -65,14 +64,13 @@ function generatePassword() {
   // if (length === i);
     // for (i = 0; i)
 
-  //
-  var passwordRules = {
-    getMinLength: function() {
+  // //
+  // var passwordRules = {
+  //   getMinLength: function() {
 
-    }
+  //   }
 
-  }
-}
+  // }
 
 // for (let i = 0; i <)
 
