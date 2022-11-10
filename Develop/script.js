@@ -8,6 +8,7 @@ generateBtn.addEventListener("click", writePassword);
 //variables for password creation
 var specChar = "!@#$%^&*()"
 var characters = "0123456789abcdefghijklmnopqrstuvwxyx!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numbers = "0123456789";
   // var passwordLength = "";
 
 // Write password to the #password input
@@ -23,17 +24,11 @@ function generatePassword() {
 
   //variables with prompts and confirms for popups with text
   var length = prompt("How many characters do you want your password to contain?");
-    if (length >= 8 && length <= 128){
-    }
-    else (!length); {
-      return;
-    }
-  var specChar1 = confirm("Do you want to include special characters?");
-     if (minSpecChar1 = passwordRules.getSpecChar1();
-      minLength++;
+
+  var specChar = confirm("Do you want to include special characters?");
+
   var numbers = window.confirm("Do you want to include numbers?");
-    if (numbers === True) {
-    }
+
   var lowerCase = window.confirm("Do you want to include lowercase letters?");
     if (!lowerCase) {
     }
@@ -42,7 +37,22 @@ function generatePassword() {
     }
   }
   
-  
+  if (length >= 8 && length <= 128){
+    length = (specChar, characters, numbers);
+  }
+  else (!length); {
+    generatePassword.return;
+  }
+
+  if (specChar.confirm === True) {
+    specChar = (specChar);
+  } else {
+    specChar != (specChar);
+  }
+
+  if (numbers === True) {
+  }
+
 
 
 //variables for minimum
