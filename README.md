@@ -9,7 +9,7 @@ N/A
 ## Usage
 Click on the "Generate Password" button. In the first prompt, answer how many characters you would like in your password (as long as it is between 8 and 128). Click ok or cancel for the rest of the popups to your choosing. Once all is answered, a random password is generated with the options you selected. 
 
-Example: ![alt text](assets/characters.png)
+Example: ![alt text](js-password/assets/characters.png)
 Live URL: 
 
 ## Credits
