@@ -5,10 +5,8 @@ var generateBtn = document.querySelector("#generate");
 //moved this up so it happens right away; click added to button
 generateBtn.addEventListener("click", writePassword);
 
-//variables for password creation
-var specChar = "!@#$%^&*()"
-var characters = "0123456789abcdefghijklmnopqrstuvwxyx!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var numbers = "0123456789";
+
+
   // var passwordLength = "";
 
 // Write password to the #password input
@@ -20,38 +18,83 @@ function writePassword() {
 
 }
 
-function generatePassword() {
+function generatePassword() {  
+
+  //variables for password creation
+  var specCharacters = "!@#$%^&*()";
+  var lowerCaseCharacters = "abcdefghijklmnopqrstuvwxyx";
+  var upperCaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numberCharacters = "0123456789";
+  var availableCharacters = "";
 
   //variables with prompts and confirms for popups with text
-  var length = prompt("How many characters do you want your password to contain?");
-
-  var specChar = confirm("Do you want to include special characters?");
-
-  var numbers = window.confirm("Do you want to include numbers?");
-
-  var lowerCase = window.confirm("Do you want to include lowercase letters?");
-    if (!lowerCase) {
-    }
-  var upperCase = window.confirm("Do you want to include uppercase letters?");
-    if (!upperCase) {
-    }
+  var pwLength = prompt("How many characters do you want your password to contain?");
+  if (pwLength < 8){
+    alert("You need to pick a number greater than 8.");
+    return;
+  }
+  if (pwLength > 128){
+    alert("You need to pick a number less than 128.");
+    return;
   }
   
-  if (length >= 8 && length <= 128){
-    length = (specChar, characters, numbers);
-  }
-  else (!length); {
-    generatePassword.return;
+  var incSpecChar = confirm("Do you want to include special characters?");
+    
+  var incNumbers = confirm("Do you want to include numbers?");
+
+  var incLowerCase = confirm("Do you want to include lowercase letters?");
+ 
+  var incUpperCase = confirm("Do you want to include uppercase letters?");
+
+  if (incSpecChar!==null){
+    availableCharacters = specCharacters;
+    alert(availableCharacters);
   }
 
-  if (specChar.confirm === True) {
-    specChar = (specChar);
-  } else {
-    specChar != (specChar);
+  if (incNumbers!==null){
+    availableCharacters += numberCharacters;
+    alert(availableCharacters);
   }
 
-  if (numbers === True) {
+  if (inclowerCase!==null){
+    availableCharacters += lowerCaseCharacters;
+    alert(availableCharacters);
   }
+
+  if (incUpperCase!==null){
+    availableCharacters += upperCaseCharacters;
+    alert(availableCharacters);
+  }
+
+  
+
+  var newpw = "";
+  for (var i = 1; i < pwLength; i++) {
+    
+  }
+
+
+
+
+  // var newpw
+  //   for (newpw = specChar.length, i++);
+
+  //   for (lowerCaseCharacters.length, i++);
+  //   for (upperCaseCharacters++, numbers++;
+
+  //     newpw
+
+}
+  
+
+    // length = (specChar, characters, numbers);
+  
+  // else (!length); {
+  //   generatePassword.return;
+  // }
+
+
+  
 
 
 
