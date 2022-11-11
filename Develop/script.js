@@ -48,30 +48,27 @@ function generatePassword() {
 
   if (incSpecChar!==null){
     availableCharacters = specCharacters;
-    alert(availableCharacters);
   }
 
   if (incNumbers!==null){
     availableCharacters += numberCharacters;
-    alert(availableCharacters);
   }
 
   if (inclowerCase!==null){
-    availableCharacters += lowerCaseCharacters;
-    alert(availableCharacters);
+    availableCharacters += toLowerCase;
   }
 
   if (incUpperCase!==null){
-    availableCharacters += upperCaseCharacters;
-    alert(availableCharacters);
+    availableCharacters += toUpperCase;
   }
 
-  
-
-  var newpw = "";
-  for (var i = 1; i < pwLength; i++) {
-    
+  var newPassword = function() {
+  for (var i = 0; i < pwLength; i++) {
+    total += newPassword[i];
   }
+
+  return total;
+}  
 
 
 
