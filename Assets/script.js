@@ -54,17 +54,19 @@ function generatePassword() {
     availableCharacters += numberCharacters;
   }
 
-  if (inclowerCase!==null){
-    availableCharacters += toLowerCase;
+  if (incLowerCase!==null){
+    availableCharacters += lowerCaseCharacters;
   }
 
   if (incUpperCase!==null){
-    availableCharacters += toUpperCase;
+    availableCharacters += upperCaseCharacters;
   }
 
   var newPassword = function() {
   for (var i = 0; i < pwLength; i++) {
-    total += newPassword[i];
+    if (password.options[i].selected);
+    // total += newPassword[i];
+    // console.log("password");
   }
 
   return total;
